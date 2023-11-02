@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>Yaro Flashcards</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+  </head>
+  <body>
+  <!--Create a Add Flashcard button-->
+    <div class="container">
+      <div class="add-flashcard-con">
+        <button id="add-flashcard">ADD NEW FLASHCARDS</button>
+      </div>
+  <!--Display card of Question/Answer-->
+       <div id="card-con">
+        <div class="card-list-container"></div>
+       </div>
+    </div>
+    <!--Input form for users to fill question and answer-->
+    <div class="question-container hide" id="add-question-card">
+      <h2>Karma Sutra Flashcards</h2>
+      <div class="wrapper">
+    <!--Error message-->
+        <div class="error-con">
+          <span class="hide" id="error">This spot cant be blank!</span>
+        </div>
+    <!--Close button-->
+        <i class="fa-solid fa-xmark" id="close-btn"></i>
+      </div>
+    <!--Create a space for your questions-->
+      <label for="question">Question:</label>
+      <textarea
+        class="input" id="question" 
+        placeholder="Put your Question in me..." rows="2"
+      ></textarea>
+    <!--Create a space for your answers-->
+      <textarea
+        class="input" id="answer"
+        placeholder="If you love hoes, type here..."
+      ></textarea>
+    <!--Create a save button-->
+      <button id="save-btn">Save your info bitch</button>
+    </div>
+  </body>
+</html>
